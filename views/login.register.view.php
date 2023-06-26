@@ -1,7 +1,7 @@
 <?php require "partials/top.php"; ?>
 
 <nav class="navbar navbar-expand bg-light navbar-light">
-  <a class="navbar-brand" href="index.php">Blogger</a>
+  <a class="navbar-brand" href="index.php">Блог</a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
       <a class="nav-link" href="index.php">На головну</a>

@@ -2,17 +2,11 @@
 
 require "bootstrap.php";
 
-if(isset($_SESSION['loggedUser'])){
-    header("Location:index.php");
+
+if(isset($_POST['resetBtn'])){
+    $user -> passwordresetUser();
 }
 
-if(isset($_POST['registerBtn'])){
-    $user -> registerUser();
-}
 
-if(isset($_POST['loginBtn'])) {
-    $user -> loginUser();
-}
-
-require "views/login.register.view.php";
+require "views/password_reset.view.php";
 
