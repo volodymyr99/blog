@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="4"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    findUnusedBaselineEntry="true"
+    findUnusedCode="true"
+>
+    <projectFiles>
+        <file name="add_comment.php" />
+        <file name="add_post.php" />
+        <file name="bootstrap.php" />
+        <file name="config.php" />
+        <file name="delete_post.php" />
+        <file name="index.php" />
+        <file name="login_register.php" />
+        <file name="logout.php" />
+        <file name="password_reset.php" />
+        <file name="profile.php" />
+        <file name="single.php" />
+        <file name="classes/Connection.php" />
+        <file name="classes/Post.php" />
+        <file name="classes/Profile.php" />
+        <file name="classes/QueryBuilder.php" />
+        <file name="classes/User.php" />
+        <file name="vendor/autoload.php" />
+        <file name="views/add.comment.view.php" />
+        <file name="views/add.post.view.php" />
+        <file name="views/index.view.php" />
+        <file name="views/login.register.view.php" />
+        <file name="views/password_reset.view.php" />
+        <file name="views/profile.view.php" />
+        <file name="views/single.view.php" />
+        <file name="vendor/composer/autoload_classmap.php" />
+        <file name="vendor/composer/autoload_files.php" />
+        <file name="vendor/composer/autoload_namespaces.php" />
+        <file name="vendor/composer/autoload_psr4.php" />
+        <file name="vendor/composer/autoload_real.php" />
+        <file name="vendor/composer/autoload_static.php" />
+        <file name="vendor/composer/ClassLoader.php" />
+        <file name="vendor/composer/installed.php" />
+        <file name="vendor/composer/InstalledVersions.php" />
+        <file name="views/partials/bottom.php" />
+        <file name="views/partials/navbar.php" />
+        <file name="views/partials/top.php" />
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+</psalm>
