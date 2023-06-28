@@ -1,6 +1,32 @@
 <?xml version="1.0"?>
-<project name="blog" default="main">
-    <target name="main" />
+<project name="blog" default="build">
+
+    <target name="tests">
+        <exec executable="vendor/bin/psalm">
+
+        </exec>
+    </target>
+
+    <target name="build" depends="tests">
+        <delete dir="build"/>
+        <fileset dir="." id="projectfiles">
+            <include name="*.php" />
+            <include name="*.html" />
+            <include name="classes/*.php" />
+            <include name="views/*.php" />
+
+        </fileset>
+
+        <copy todir="build">
+            <fileset refid="projectfiles"/>
+            <filterchain>
+                <stripphpcomments />
+            </filterchain>
+        </copy>
+
+    </target>
+
+
 
 </project>
 
