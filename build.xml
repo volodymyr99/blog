@@ -7,6 +7,16 @@
         </exec>
     </target>
 
+    <target name="test">
+        <phpunit printsummary="true" haltonfailure="true">
+            <batchtest>
+                <fileset dir="./tests">
+                    <include name="*Test.php"/>
+                </fileset>
+            </batchtest>
+        </phpunit>
+    </target>
+
     <target name="build" depends="tests">
         <delete dir="build"/>
         <fileset dir="." id="projectfiles">
