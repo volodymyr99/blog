@@ -1,7 +1,10 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-//include_once "c:\openserver\domains\blog\classes\Post.php";
+//use classes\Post;
+//require_once "Post.php";
+require_once "c:\openserver\domains\blog\classes\QueryBuilder.php";
+require_once "c:\openserver\domains\blog\classes\Post.php";
 
 class PostTest extends TestCase
 {

@@ -1,9 +1,11 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+//use classes\User;
 //set_include_path("c:\openserver\domains\blog\classes");
 //include_once "QueryBuilder.php";
-//include_once "User.php";
+require_once "c:\openserver\domains\blog\classes\QueryBuilder.php";
+require_once "c:\openserver\domains\blog\classes\User.php";
 
 
 
